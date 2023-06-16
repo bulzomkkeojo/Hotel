@@ -30,4 +30,8 @@ public class Room {
         this.roomCharge = roomCharge;
     }
 
+    @Override
+    public String toString(){
+        return this.getRoomSize()+"  | "+this.getRoomCharge();
+    }
 }
