@@ -1,5 +1,3 @@
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.UUID;
 
 public class Reservation {
@@ -26,6 +24,11 @@ public class Reservation {
 
     public String getId() {
         return id;
+    }
+
+    @Override
+    public String toString(){
+        return this.getRoom().getRoomSize()+" | "+ this.getRoom().getRoomCharge()+" | "+ this.getCustomerName()+" | "+ this.getPhoneNumber()+" | "+ this.getReservationDate()+" | "+ this.getId();
     }
 
 
